@@ -40,6 +40,8 @@ Este proyecto es una aplicación basada en microservicios que se compone de vari
 
   ```bash
   docker-compose up --build
+```
+
   Este comando construye las imágenes de Docker para cada servicio, las inicia y las conecta en la misma red de Docker (`app-network`), permitiendo que se comuniquen entre sí.
 
 ## 🌐 Resumen de los Servicios y Puertos
