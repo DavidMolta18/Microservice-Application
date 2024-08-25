@@ -64,12 +64,19 @@ This command builds Docker images for each service, starts them, and connects th
 ## 🌐 Summary of Services and Ports
 
 - **Auth API**: Running on [http://localhost:8000](http://localhost:8000)
+  
 - **Users API**: Running on [http://localhost:8083](http://localhost:8083)
+  
 - **TODOs API**: Running on [http://localhost:8082](http://localhost:8082)
+  
 - **Frontend**: Running on [http://localhost:8080](http://localhost:8080)
+  
 - **Redis**: Listening on port `6379`
+  
 - **Prometheus**: Running on [http://localhost:9090](http://localhost:9090)
+  
 - **Grafana**: Running on [http://localhost:3000](http://localhost:3000)
+  
 - **cAdvisor**: Running on [http://localhost:8080](http://localhost:8081)
 
 ## Project testing 
