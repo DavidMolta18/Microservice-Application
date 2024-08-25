@@ -32,7 +32,7 @@ This project is a microservices-based application that is made up of several ind
 
 ## 🔨 Construction and Execution of Containers
 
-3. Utilicé Docker Compose para gestionar la construcción y ejecución de todos los microservicios. El archivo `docker-compose.yml` que define estos servicios se encuentra en la carpeta raíz del proyecto.
+3. Used Docker Compose to manage the build and execution of all microservices. The `docker-compose.yml` file that defines these services is located in the root folder of the project.
 
 ## 🚀 Project Execution
 
