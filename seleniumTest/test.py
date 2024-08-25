@@ -6,7 +6,7 @@ import time
 import threading
 
 # WebDriver configuration
-chrome_driver_path = "C:/chromedriver-win64/chromedriver.exe"
+chrome_driver_path = "PATHTOYOURDRIVER"
 #chrome_driver_path = "/mnt/c/chromedriver-linux64/chromedriver"
 chrome_options = Options()
 service = Service(executable_path=chrome_driver_path)
