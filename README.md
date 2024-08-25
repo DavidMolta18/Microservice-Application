@@ -77,7 +77,7 @@ This command builds Docker images for each service, starts them, and connects th
   
 - **Grafana**: Running on [http://localhost:3000](http://localhost:3000)
   
-- **cAdvisor**: Running on [http://localhost:8080](http://localhost:8081)
+- **cAdvisor**: Running on [http://localhost:8081](http://localhost:8081)
 
 ## Project testing 
 For the automatic testing of the web page I used Python, in particular a library called Selenium, which allowed me to simulate the entry to the web pages, the login, the registration of activities and their respective deletion to see how the Grafana statistics changed.
