@@ -26,7 +26,7 @@ This project is a microservices-based application composed of several independen
    git clone https://github.com/bortizf/microservice-app-example.git
    ```
 
-   _Notes_: The initial approach was to install all dependencies on a Windows machine, but it proved inefficient. Docker provided a more scalable solution, enabling the project to be run across different environments with ease.
+   _Note_ : The initial approach was to install all dependencies on a Windows machine, but it proved inefficient. Docker provided a more scalable solution, enabling the project to be run across different environments with ease.
 
 ## 📦 Creation of Dockerfiles for Each Microservice
 
@@ -70,8 +70,48 @@ This command builds Docker images for each service, starts them, and connects th
 - **Redis**: Listening on port `6379`
 - **Prometheus**: Running on [http://localhost:9090](http://localhost:9090)
 - **Grafana**: Running on [http://localhost:3000](http://localhost:3000)
-- **cAdvisor**: Running on [http://localhost:8080](http://localhost:8080)
+- **cAdvisor**: Running on [http://localhost:8080](http://localhost:8081)
+
+## Project testing 
+For the automatic testing of the web page I used Python, in particular a library called Selenium, which allowed me to simulate the entry to the web pages, the login, the registration of activities and their respective deletion to see how the Grafana statistics changed.
 
 ## 📚 Conclusion
 
 The project involved containerizing and deploying an application composed of multiple microservices, along with implementing a robust monitoring system. By using Docker and Docker Compose, the application can be run efficiently and consistently across different environments. Additionally, the integration of Prometheus, cAdvisor, and Grafana ensures that the application's performance and resource usage are monitored and visualized effectively, enhancing operational transparency and reliability.
+
+
+# Architecture diagram
+![DASHBOARD](./arch-img/ARCHITECTUREDIAGRAM.png)
+
+# Grafana 
+Below is a small overview of what GRAFANA is and what it showed. In my specific case I used a DASHBOARD that was already made on the internet and showed me everything I needed.
+taken from: https://grafana.com/grafana/dashboards/19792-cadvisor-dashboard/
+
+![DASHBOARD](./arch-img/DASHBOARD.png)
+
+This dashboard allows us to see all the services we have running, as well as their statistics. For this particular example I show the information from cAdvisor.
+
+![CADVISORALONE](./arch-img/CADVISORALONE.png)}
+
+# Test proof
+As proof of the automatic tests we can see the following images. In the first image, we see the amount of cpu used by the containers when opening and closing the page.
+
+![CLOSEUPCLOSE](./arch-img/CLOSEUPCLOSE.png)
+
+On this second image, we see the amount of cpu used by the containers when opening the page, running the test script, and then closing all page instances.
+
+![CLOSETESTCLOSE](./arch-img/CLOSETESTCLOSE.png)
+
+# Network example 
+
+Grafana also allows us to see the number of packets sent and received, as well as the bytes received and sent. Example below.
+
+Bytes sent and received per container
+
+![NETWORKCLOSEA](./arch-img/NETWORKCLOSEA.png)
+
+Packages sent and received by container
+
+![NETWORKCLOSEB](./arch-img/NETWORKCLOSEB.png)
+
+
