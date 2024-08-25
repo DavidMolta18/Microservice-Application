@@ -87,37 +87,39 @@ For the automatic testing of the web page I used Python, in particular a library
 The project involved containerizing and deploying an application composed of multiple microservices, along with implementing a robust monitoring system. By using Docker and Docker Compose, the application can be run efficiently and consistently across different environments. Additionally, the integration of Prometheus, cAdvisor, and Grafana ensures that the application's performance and resource usage are monitored and visualized effectively, enhancing operational transparency and reliability.
 
 
-# Architecture diagram
+# 🏗️ Architecture Diagram
+
 ![DASHBOARD](./arch-img/ARCHITECTUREDIAGRAM.png)
 
-# Grafana 
-Below is a small overview of what GRAFANA is and what it showed. In my specific case I used a DASHBOARD that was already made on the internet and showed me everything I needed.
-taken from: https://grafana.com/grafana/dashboards/19792-cadvisor-dashboard/
+# 📊 Grafana
+
+Grafana is a powerful tool for data visualization and system monitoring. In this specific case, I used a pre-existing dashboard that provided all the necessary information. You can find more details here: [Grafana Dashboard](https://grafana.com/grafana/dashboards/19792-cadvisor-dashboard/).
 
 ![DASHBOARD](./arch-img/DASHBOARD.png)
 
-This dashboard allows us to see all the services we have running, as well as their statistics. For this particular example I show the information from cAdvisor.
+This dashboard allows you to view all the running services and their statistics. In the example shown, it displays information from cAdvisor.
 
-![CADVISORALONE](./arch-img/CADVISORALONE.png)}
+![CADVISORALONE](./arch-img/CADVISORALONE.png)
 
-# Test proof
-As proof of the automatic tests we can see the following images. In the first image, we see the amount of cpu used by the containers when opening and closing the page.
+# 🧪 Test Proof
+
+Below are images that demonstrate the automated tests performed. The first image shows the amount of CPU used by the containers when opening and closing the page.
 
 ![CLOSEUPCLOSE](./arch-img/CLOSEUPCLOSE.png)
 
-On this second image, we see the amount of cpu used by the containers when opening the page, running the test script, and then closing all page instances.
+The second image shows the amount of CPU used by the containers when opening the page, running the test script, and then closing all page instances.
 
 ![CLOSETESTCLOSE](./arch-img/CLOSETESTCLOSE.png)
 
-# Network example 
+# 🌐 Network Example
 
-Grafana also allows us to see the number of packets sent and received, as well as the bytes received and sent. Example below.
+Grafana also allows us to view the number of packets sent and received, as well as the bytes transferred. Below is an example.
 
-Bytes sent and received per container
+Bytes sent and received per container:
 
 ![NETWORKCLOSEA](./arch-img/NETWORKCLOSEA.png)
 
-Packages sent and received by container
+Packets sent and received by container:
 
 ![NETWORKCLOSEB](./arch-img/NETWORKCLOSEB.png)
 
