@@ -37,3 +37,8 @@ To run these tests, you need:
 
 - **Driver Not Found**: Ensure that the path to ChromeDriver is correctly set in the script.
 - **Browser Version Mismatch**: Make sure the version of ChromeDriver matches the version of Google Chrome installed on your machine.
+
+
+# IMPORTANT
+
+## You must take into account in which environment you are running the test. This one was done with a windows approach.
